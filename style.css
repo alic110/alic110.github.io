@@ -1,0 +1,67 @@
+body {
+  color: black;
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  color: black;
+  font-weight: bolder;
+  font-family: "Lexend";
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+a:hover {
+  color: black;
+}
+
+.center {
+  margin: 25vh auto 0;
+  width: 50%;
+}
+
+h1 {
+  font-size: 48pt;
+  margin: 10px 0;
+}
+
+p {
+  text-align: justify;
+}
+
+#grad {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  filter: brightness(1);
+}
+
+#me {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.75s cubic-bezier(0.65, 0, 0.35, 1) 0s;
+  position: relative;
+}
+
+#me a:hover hide {
+  opacity: 1;
+  transition: 200ms;
+}
+
+hide {
+  opacity: 0;
+  transition: 200ms;
+  user-select: all;
+}
+
+#me svg {
+  margin-bottom: -7px;
+}
